@@ -8,7 +8,7 @@ import App from './app'
 const renderApp = (NextApp) => {
   render(
     <AppContainer>
-    <NextApp />
+      <NextApp />
     </AppContainer>,
     document.querySelector('[data-js="app"]')
   )
@@ -16,7 +16,7 @@ const renderApp = (NextApp) => {
 
 renderApp(App)
 
-if(module.hot) {
+if (module.hot) {
   module.hot.accept('./app', () => {
     const NextApp = require('./app').default
     renderApp(NextApp)

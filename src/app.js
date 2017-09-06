@@ -2,7 +2,7 @@
 import React from 'react'
 
 const App = React.createClass({
-  render: function() {
+  render: function () {
     return <div><h1>Titulo da aplicação</h1></div>
   }
 })
