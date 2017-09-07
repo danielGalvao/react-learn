@@ -6,6 +6,11 @@ const Title = ({name, lastname}) => (
   <h1>Olá {`${name} ${lastname}`}</h1>
 )
 
+Title.defaultProps = {
+  name: 'Daniel',
+  lastname: 'Galvão'
+}
+
 // const Title = React.createClass({
 //   getDefaultProps: function () {
 //     return {
