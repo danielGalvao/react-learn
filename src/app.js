@@ -6,8 +6,8 @@ class App extends React.Component {
   render () {
     return (
       <div className='container'>
-        {['green', 'yellow', 'pink'].map((square) => (
-          <Square key={square} color={square} />
+        {['green', 'yellow', 'pink', 'green'].map((square, index) => (
+          <Square key={index} color={square} />
         ))}
       </div>
     )
