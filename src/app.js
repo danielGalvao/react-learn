@@ -7,7 +7,9 @@ class App extends React.Component {
     return (
       <div className='container'>
         {['green', 'yellow', 'pink', 'green'].map((square, index) => (
-          <Square key={index} color={square} />
+          <Square key={index} color={square}>
+            <span> {square} </span>
+          </Square>
         ))}
       </div>
     )
