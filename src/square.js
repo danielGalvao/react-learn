@@ -7,6 +7,8 @@ const Square = ({ color }) => (
     backgroundColor: color,
     height: '100px',
     width: '100px'
+  }} onClick={(e) => {
+    alert('clicou no ' + color)
   }} />
 )
 
