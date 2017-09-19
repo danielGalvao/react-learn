@@ -7,7 +7,7 @@ const Square = ({ color, children }) => (
     backgroundColor: color,
     height: '100px',
     width: '100px'
-  }} onClick={(e) => {
+  }} onClick={() => {
     alert('clicou no ' + color)
   }}>
     {children}
