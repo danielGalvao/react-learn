@@ -2,16 +2,12 @@
 
 import React from 'react'
 
-const Square = ({ color, children }) => (
+const Square = ({ color }) => (
   <div style={{
     backgroundColor: color,
     height: '100px',
     width: '100px'
-  }} onClick={() => {
-    alert('clicou no ' + color)
-  }}>
-    {children}
-  </div>
+  }} />
 )
 
 Square.defaultProps = {
