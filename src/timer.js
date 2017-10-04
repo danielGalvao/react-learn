@@ -20,6 +20,10 @@ class Timer extends Component {
     }, 1000)
   }
 
+  componentWillReceiveProps (nextProps) {
+    console.log('componentWillRceiveProps', this.props, nextProps)
+  }
+
   componentWillUnmount () {
     clearInterval(this.timer)
   }
