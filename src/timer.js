@@ -9,7 +9,7 @@ class Timer extends Component {
       time: 0
     }
 
-    this.timer
+    this.timer = 0
   }
 
   componentDidMount () {
